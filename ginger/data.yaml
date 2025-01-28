@@ -1,0 +1,7 @@
+disk:
+  type: 'raw'
+  path: '../target/disk_data.raw'
+  size_mib: 512
+dirs:
+files:
+

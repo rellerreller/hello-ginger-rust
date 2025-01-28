@@ -1,0 +1,17 @@
+disk:
+  type: 'raw'
+  path: '../target/disk_image.raw'
+  size_mib: 256
+dirs:
+files:
+- source: '../target/x86_64-unknown-linux-musl/release/hello-ginger-rust'
+  destination: '/sbin/hello-ginger'
+  uid: 10
+  permissions: 0o500
+  label: 'hello_exec'
+- source: './html/*'
+  destination: '/etc/'
+  uid: 10
+  permissions: 0o400
+  label: 'hello_config'
+  template: true
