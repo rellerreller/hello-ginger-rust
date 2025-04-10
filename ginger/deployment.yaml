@@ -1,5 +1,5 @@
 disk:
-  type: 'raw'
+- type: 'raw'
   path: '../target/disk_deployment.raw'
   size_mib: 512
 dirs:
